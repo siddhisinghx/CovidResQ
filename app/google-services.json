@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "10396037362",
+    "firebase_url": "https://roadresq-b3bc2.firebaseio.com",
+    "project_id": "roadresq-b3bc2",
+    "storage_bucket": "roadresq-b3bc2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:10396037362:android:7eb181af72a30c18e4a06b",
+        "android_client_info": {
+          "package_name": "com.example.roadresq"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "10396037362-2s7uaqrp16cut5m8saduhsl1beg36leu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFqrO0HEtrNpPOEq5D7nbqKwpOCf7fQ0c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "10396037362-2s7uaqrp16cut5m8saduhsl1beg36leu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

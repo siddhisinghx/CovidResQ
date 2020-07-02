@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">10396037362-2s7uaqrp16cut5m8saduhsl1beg36leu.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://roadresq-b3bc2.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">10396037362</string>
+    <string name="google_api_key" translatable="false">AIzaSyAFqrO0HEtrNpPOEq5D7nbqKwpOCf7fQ0c</string>
+    <string name="google_app_id" translatable="false">1:10396037362:android:7eb181af72a30c18e4a06b</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAFqrO0HEtrNpPOEq5D7nbqKwpOCf7fQ0c</string>
+    <string name="google_storage_bucket" translatable="false">roadresq-b3bc2.appspot.com</string>
+    <string name="project_id" translatable="false">roadresq-b3bc2</string>
+</resources>

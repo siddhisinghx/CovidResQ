@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E7E2E2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        >
+
+        <com.smarteist.autoimageslider.SliderView
+            android:id="@+id/imageSlider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            app:sliderAnimationDuration="600"
+            app:sliderAutoCycleDirection="back_and_forth"
+            app:sliderAutoCycleEnabled="true"
+            app:sliderCircularHandlerEnabled="true"
+            app:sliderIndicatorAnimationDuration="600"
+            app:sliderIndicatorGravity="center_horizontal|bottom"
+            app:sliderIndicatorMargin="15dp"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorPadding="3dp"
+            app:sliderIndicatorRadius="2dp"
+            app:sliderIndicatorSelectedColor="#5A5A5A"
+            app:sliderIndicatorUnselectedColor="#FFF"
+            app:sliderScrollTimeInSec="1"
+            app:sliderStartAutoCycle="true" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cardView"
+        android:layout_above="@id/buttonStartSensors"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardCornerRadius="15dp"
+        android:elevation="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textYourSetup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="Your Setup"
+            android:textSize="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="@font/montserrat_bold"
+            />
+
+        <RelativeLayout
+            android:id="@+id/linerarLayoutGpsStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textYourSetup"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="32dp">
+
+            <TextView
+                android:id="@+id/textGPSStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GPS Status"
+                android:textSize="23sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@android:color/darker_gray"
+                android:layout_toLeftOf="@id/imageGPSStatus"/>
+
+            <ImageView
+                android:id="@+id/imageGPSStatus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/cross"
+                />
+
+        </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/linearLayoutInternetStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linerarLayoutGpsStatus"
+                android:orientation="horizontal"
+
+                android:layout_marginLeft="32dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Internet Status"
+                    android:textSize="23sp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_toLeftOf="@id/imageInternetStatus"/>
+
+                <ImageView
+                    android:id="@+id/imageInternetStatus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/cross"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/linearLayoutInfoStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearLayoutInternetStatus"
+                android:orientation="horizontal"
+                android:layout_marginLeft="32dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Info Status"
+                    android:textSize="23sp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:layout_toLeftOf="@id/imageInfoStatus"
+                    android:textColor="@android:color/darker_gray"/>
+
+                <ImageView
+                    android:id="@+id/imageInfoStatus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/tick"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/buttonStartSensors"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:text="Tap to have a safe journey!"
+        android:background="@drawable/blue_gradient"
+        android:textColor="@color/cardview_light_background"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/montserrat_bold"
+        />
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmergencyActivity">
+
+    <TextView
+        android:id="@+id/textAccidentDetected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="EMERGENCY SOS DETECTED"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="55sp" />
+
+    <TextView
+        android:id="@+id/textAccidentDetected2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textAccidentDetected"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="We will now try to contact nearest Relief Center for help in 20 seconds.."
+        android:textColor="@android:color/darker_gray"
+        android:textSize="30sp" />
+
+    <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+        android:id="@+id/progressBar"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        app:spb_sections_count="4"
+        app:spb_color="#FF0000"
+        app:spb_speed="2.0"
+        app:spb_stroke_width="2dp"
+        app:spb_stroke_separator_length="8dp"
+        app:spb_reversed="false"
+        app:spb_mirror_mode="false"
+        app:spb_progressiveStart_activated="true"
+        app:spb_progressiveStart_speed="1.5"
+        app:spb_progressiveStop_speed="3.4"
+        android:layout_below="@id/textAccidentDetected2"
+        android:layout_marginTop="5dp"
+
+
+        />
+
+
+    <Button
+        android:id="@+id/cancelButtonEmergency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:textColor="@color/cardview_light_background"
+        android:text="Cancel Help"
+        android:layout_alignParentBottom="true"
+        android:textSize="30sp"
+        android:fontFamily="@font/montserrat_bold"/>
+
+    <Button
+        android:id="@+id/revertButtonEmergency"
+        android:layout_above="@id/cancelButtonEmergency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/cardview_light_background"
+        android:text="Revert"
+        android:visibility="invisible"
+        android:textSize="30sp"
+        android:fontFamily="@font/montserrat_bold"/>
+
+</RelativeLayout>

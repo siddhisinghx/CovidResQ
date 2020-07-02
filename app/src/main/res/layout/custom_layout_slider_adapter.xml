@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/slider_custom_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/cardview_dark_background"
+        android:alpha="0.6"/>
+
+    <TextView
+        android:id="@+id/slider_custom_text"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:textSize="16sp"
+        android:text="People who made a difference"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/montserrat"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="10dp"
+
+        />
+
+</RelativeLayout>
